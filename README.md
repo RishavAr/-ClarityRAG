@@ -43,6 +43,7 @@ Confluence pages in large organizations are abundant and inconsistently structur
 | ------------------ | --------------------------------------------- |
 | `rag_api.py`          | FastAPI server with chat endpoints            |
 | `fi.py`      | Embedding logic using `sentence-transformers` |
+| `confluence_synthetic_chunks.json` |data used |
 | `requirements.txt` | Python dependencies                           |
 | `Dockerfile`       | Container configuration                       |
 | `README.md`        | You're reading it!                            |
