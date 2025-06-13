@@ -45,7 +45,6 @@ Confluence pages in large organizations are abundant and inconsistently structur
 | `fi.py`      | Embedding logic using `sentence-transformers` |
 | `requirements.txt` | Python dependencies                           |
 | `Dockerfile`       | Container configuration                       |
-| `docs/`            | Sample docs to be indexed                     |
 | `README.md`        | You're reading it!                            |
 
 ⚙️ How to Set Up Locally (New Machine Setup)
