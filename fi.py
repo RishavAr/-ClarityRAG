@@ -12,8 +12,8 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ─────────────── USER CONFIG ────────────────────────────────────────────
-DOC_PATH   = "/Users/aabhabothera/Downloads/synthetic_confluence_docs.json"
-EMB_PATH   = "/Users/aabhabothera/Downloads/all-MiniLM-L6-v2-local"
+DOC_PATH   = "/Users/rishavaryan/synthetic_confluence_docs.json"
+EMB_PATH = "sentence-transformers/all-MiniLM-L6-v2"
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "codellama"          # or "llama3", etc.
 
@@ -24,7 +24,7 @@ MAX_CHARS = 700                     # truncate each chunk in prompt
 
 def load_docs(path):
     docs = json.load(open(path))
-    flat = [d["title"] + "\n" + "\n".join(d["content"]) for d in docs]
+    flat = [f"{d['page_type'].capitalize()} - {d['section_title']}\n{d['content']}" for d in docs]
     return docs, flat
 
 
