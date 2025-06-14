@@ -12,7 +12,7 @@ Confluence pages in large organizations are abundant and inconsistently structur
 
 🔍 Semantic search over internal docs (Confluence exports or custom markdown)
 💬 Chat interface with streaming support
-🧠 Local inference engine powered by your own model (clarity-rag)
+🧠 Local inference engine powered by your own model (ConfluBot)
 🛠️ FastAPI backend with OpenAI-compatible /v1/chat/completions and /v1/chat/completions-stream routes
 🧾 Modular RAG pipeline with retrieval → context injection → generation
 🌐 Web UI support (Open WebUI or Postman)
@@ -28,7 +28,7 @@ Confluence pages in large organizations are abundant and inconsistently structur
                              |   RAG Pipeline:                  |
                              |   - Retriever (Vector DB)        |
                              |   - Prompt Assembler             |
-                             |   - Generator (LLM: clarity-rag) |
+                             |   - Generator (LLM: ConfluBot) |
                              +----------------------------------+
                                               |
                                               v
@@ -53,8 +53,8 @@ Confluence pages in large organizations are abundant and inconsistently structur
 1. Clone the Repository
 
 ```bash 
-git clone https://github.com/yourname/clarity-rag.git
-cd clarity-rag
+git clone https://github.com/yourname/ConfluBot.git
+cd ConfluBot
 ```
 
 2. Create & Activate Python Environment
@@ -79,7 +79,7 @@ uvicorn rag_api:app --host 0.0.0.0 --port 8000
 5. Connect WebUI or Postman
 Web UI (Open WebUI):
 Endpoint: http://<your-ip>:8000/v1/chat/completions (or /completions-stream for streaming)
-Model ID: clarity-rag
+Model ID: ConfluBot
 Enable “Stream Chat Response” for live feedback
 
 
