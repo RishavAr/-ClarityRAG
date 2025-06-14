@@ -73,7 +73,7 @@ pip install -r requirements.txt
 4. Run the FastAPI App
 ```bash
 
-uvicorn abh:app --host 0.0.0.0 --port 8000
+uvicorn rag_api:app --host 0.0.0.0 --port 8000
 ```
 
 5. Connect WebUI or Postman
