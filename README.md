@@ -104,6 +104,12 @@ Replace get_answer() in fi.py with your own RAG logic using LangChain or Haystac
 Model swapping: Use any transformers or llama.cpp model you want, as long as it supports generation
 
 
+## 🎬 Demo Video
+
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?logo=google-drive)](https://drive.google.com/file/d/192C5CPXKB7indZsJknRLb_pZopzkOWJy/view?usp=share_link)
+
+
+
 
 🚀 To Build and Run:
 
