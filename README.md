@@ -1,13 +1,13 @@
-# ClarityRAG
- ClarityRAG:An Internal AI Assistant for Instant Confluence Knowledge Retrieval
+# ConfluBot
+ ConfluBot:An Internal AI Assistant for Instant Confluence Knowledge Retrieval
  
 Overview
 
-ClarityRAG is a Retrieval-Augmented Generation (RAG) system built to make navigating internal documentation effortless and fast. It enables natural language querying of Confluence content using a local LLM pipeline, eliminating the need for keyword hunting or tribal knowledge.
+ConfluBot is a Retrieval-Augmented Generation (RAG) system built to make navigating internal documentation effortless and fast. It enables natural language querying of Confluence content using a local LLM pipeline, eliminating the need for keyword hunting or tribal knowledge.
 
 📌 Problem Statement
 
-Confluence pages in large organizations are abundant and inconsistently structured. Employees waste time manually searching or asking others for context that already exists. ClarityRAG solves this by providing a chat-based AI interface that retrieves and summarizes relevant internal content instantly.
+Confluence pages in large organizations are abundant and inconsistently structured. Employees waste time manually searching or asking others for context that already exists. ConfluBot solves this by providing a chat-based AI interface that retrieves and summarizes relevant internal content instantly.
 🎯 Features
 
 🔍 Semantic search over internal docs (Confluence exports or custom markdown)
@@ -110,11 +110,11 @@ Model swapping: Use any transformers or llama.cpp model you want, as long as it 
 # Build the Docker image
 ```bash
 
-docker build -t clarityrag .
+docker build -t ConfluBot .
 ```
 # Run the container
 ```bash
-docker run -p 8000:8000 clarityrag
+docker run -p 8000:8000 ConfluBot
 ```
 
 
